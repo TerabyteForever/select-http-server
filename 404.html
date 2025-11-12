@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    :root{
+        --bg-color: white;
+        --fg-color: black;
+        --link-color: blue;
+    }
+    @media screen and (prefers-color-scheme: dark) {
+        :root{
+            --bg-color: black;
+            --fg-color: white;
+            --link-color: wheat;
+        }
+    }
+    *{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: var(--bg-color);
+        color: var(--fg-color);
+    }
+    a{
+        color: var(--link-color);
+    }
+</style>    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTTP Server</title>
+</head>
+<body>
+    <h1>404 - Not found!</h1>
+    <p>
+        Oops, the requested content was not found on this server.
+        <br>
+        <br>
+        Maybe you've expected too much from this website? idk. <br>
+        But, your content is not available here, so you can be sure about it. 
+    </p>
+    <hr>
+</body>
+<footer>
+    <p><i>Simple HTTP Server</i></p>
+    <a href="">GitHub Link</a>
+</footer>
+</html>
